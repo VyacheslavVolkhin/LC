@@ -9,6 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./css/slick.css" />
@@ -22,24 +25,841 @@
 
         <!-- header -->
         <header class="header">
-            <div class="inner-wrap">
-                44444
+            <!--header-top-panel-->
+            <div class="header-top-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <img src="./img/main/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-wrap">
+                        <ul>
+                            <li>
+                                <a href="" class="btn-action-menu menu-main menu-att">
+                                    <span class="menu-ico">
+                                        <img src="./img/icons/menu-lk.svg" alt="">
+                                    </span>
+                                    <span class="menu-title">Личный кабинет</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-action-menu menu-main">
+                                    <span class="menu-ico">
+                                        <img src="./img/icons/menu-calc.svg" alt="">
+                                    </span>
+                                    <span class="menu-title">Калькулятор</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-action-menu menu-main">
+                                    <span class="menu-ico">
+                                        <img src="./img/icons/menu-instruction.svg" alt="">
+                                    </span>
+                                    <span class="menu-title">Инструкция</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <!--/header-top-panel-->
+            <!--header-nav-panel-->
+            <nav class="header-nav-panel cnt-section js-popup-wrap">
+                <a href="" class="btn-action-ico ico-menu js-btn-toggle"></a>
+                <div class="inner-wrap js-popup-block">
+                    <div class="menu-wrap">
+                        <ul class="menu">
+                            <li><a href="">главная</a></li>
+                            <li><a href="" class="active">быстрый старт</a></li>
+                            <li><a href="">рендер-плагин</a></li>
+                            <li><a href="">софт</a></li>
+                            <li><a href="">о ферме</a></li>
+                            <li><a href="">блог</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="contacts-wrap">
+                        <a href="" class="btn-action-ico button-cnt">
+                            <img src="./img/icons/phone.svg" alt="">
+                        </a>
+                        <a href="" class="btn-action-ico button-cnt">
+                            <img src="./img/icons/tg.svg" alt="">
+                        </a>
+                        <a href="" class="btn-action-ico button-cnt">
+                            <img src="./img/icons/email.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="lang-wrap">
+                        <a href="" class="btn-action-select">RUS</a>
+                    </div>
+                </div>
+            </nav>
+            <!--/header-nav-panel-->
         </header>
         <!-- /header -->
 
         <!-- page -->
         <div class="page">
-            2222
+
+            <!--page-main-box-->
+            <div class="page-main-box">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-title title01">
+                        <div class="page-title">GPU</div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-title title02">
+                        <div class="page-title">RENDER</div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-title title03">
+                        <div class="page-title">FARM</div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-item wrap03">
+                        <div class="item-total">
+                            <div class="tt-info">26.367</div>
+                            <div class="tt-title">Суммарный <br>octane bench</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-item wrap02">
+                        <div class="item-total">
+                            <div class="tt-info">20</div>
+                            <div class="tt-title">технологичных <br>серверов</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-item wrap01">
+                        <div class="item-total">
+                            <div class="tt-info">0.35</div>
+                            <div class="tt-title">Рублей <br>octane bench/час</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+                <div class="page-actions-box">
+                    <div class="action-wrap">
+                        <a href="" class="btn-action-link">узнать стоимость</a>
+                    </div>
+                    <div class="action-wrap">
+                        <a href="" class="btn-action-link">Начать рендер</a>
+                    </div>
+                </div>
+            </div>
+            <!--/page-main-box-->
+
+            <!--about-box-->
+            <div class="about-box">
+                <div class="text-outer-wrap">
+                    <h1 class="h1-title">О ферме</h1>
+                    <p>Lacrimas farm – это крупнейшая в России GPU рендер-ферма. Наш облачный сервис оказывает услуги рендера с 2015 года. Известные студии и специалисты 3D графики выбирают GPU рендер-ферму Lacrimas farm за мощное современное оборудование и оперативную техническую поддержку специалистов данной индустрии.</p>
+                    <a href="" class="btn-action-link button-down button-dark button-small">ПОДРОБНЕЕ</a>
+                </div>
+                <div class="pic-outer-wrap">
+                    <img src="./img/about.jpg" alt="" class="img-bg-cover">
+                </div>
+            </div>
+            <!--/about-box-->
+
+            <!--pluses-box-->
+            <div class="pluses-box">
+                <h2 class="h1-title">Преимущества</h2>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap wrap01">
+                        <div class="item-plus">
+                            <div class="elm-ico">
+                                <img src="./img/icons/plus01.svg" alt="">
+                            </div>
+                            <div class="plus-title">запуск рендера <br>с вашего ПК</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap02">
+                        <div class="item-plus">
+                            <div class="elm-ico">
+                                <img src="./img/icons/plus02.svg" alt="">
+                            </div>
+                            <div class="plus-title">Бесплатный <br>тест рендера</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap03">
+                        <div class="item-plus">
+                            <div class="elm-ico">
+                                <img src="./img/icons/plus03.svg" alt="">
+                            </div>
+                            <div class="plus-title">накопительные <br> скидки</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap04">
+                        <div class="item-plus">
+                            <div class="elm-ico">
+                                <img src="./img/icons/plus04.svg" alt="">
+                            </div>
+                            <div class="plus-title">техническая <br>поддержка 24/7</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap05">
+                        <div class="item-plus">
+                            <div class="elm-ico">
+                                <img src="./img/icons/plus05.svg" alt="">
+                            </div>
+                            <div class="plus-title">Оптимизация <br>Сцены</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/pluses-box-->
+
+            <!--info-box-->
+            <div class="info-box">
+                <div class="text-outer-wrap">
+                    <div class="title-wrap">
+                        <h2 class="page-title">SOFT</h2>
+                    </div>
+                    <div class="text-wrap">
+                        <p>На рендер-ферме установлен актуальный 3D софт (3ds Max, Cinema 4D, Maya, Blender и др.). Используем стабильные версии программ и плагинов, по запросу устанавливаем более свежие.</p>
+                        <a href="" class="btn-action-link button-down button-dark button-small">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+                <div class="slider-outer-wrap">
+                    <ul class="slider">
+                        <li>Cinema 4d</li>
+                        <li>redshift</li>
+                        <li>Houdini</li>
+                        <li>Blender</li>
+                        <li>Maya</li>
+                        <li>3DSmax</li>
+                        <li>octane</li>
+                        <li>After effect</li>
+                        <li>X-Partricles</li>
+                        <li>Cinema 4d</li>
+                        <li>redshift</li>
+                        <li>Houdini</li>
+                        <li>Blender</li>
+                        <li>Maya</li>
+                        <li>3D max</li>
+                        <li>octane</li>
+                        <li>After effect</li>
+                        <li>X-Partricles</li>
+                        <li>Cinema 4d</li>
+                        <li>redshift</li>
+                        <li>Houdini</li>
+                        <li>Blender</li>
+                        <li>Maya</li>
+                        <li>3DSmax</li>
+                        <li>octane</li>
+                        <li>After effect</li>
+                        <li>X-Partricles</li>
+                        <li>Cinema 4d</li>
+                        <li>redshift</li>
+                        <li>Houdini</li>
+                        <li>Blender</li>
+                        <li>Maya</li>
+                        <li>3D max</li>
+                        <li>octane</li>
+                        <li>After effect</li>
+                        <li>X-Partricles</li>
+                    </ul>
+                </div>
+            </div>
+            <!--/info-box-->
+
+            <!--steps-box-->
+            <div class="steps-box">
+                <div class="title-box">
+                    <h2 class="h1-title">Как отправить на рендер</h2>
+                    <div class="text-wrap">
+                        <p>Отправить на рендер ваш проект можно легко и быстро. Чтобы понять, как работает рендер-ферма, достаточно пройти всего 5 шагов. Если у вас остались вопросы, пишите нам в чат или изучайте <a href="" class="link-main">инструкцию</a>. </p>
+                    </div>
+                </div>
+                <div class="items-wrap js-items">
+                    <!--item wrap-->
+                    <div class="item-wrap active">
+                        <div class="item-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content-wrap js-item-content">
+                                <div class="step-inner-content">
+                                    <div class="step-text-wrap">
+                                        <div class="step-text">Регистрация на сайте «Lacrimas farm» для создания «Личного кабинета» и доступа к полному функционалу облачного рендера и пополнения баланса.</div>
+                                    </div>
+                                    <div class="step-title h3-title">Создание личного кабинета</div>
+                                    <div class="step-action"><a href="" class="btn-action-link button-down button-dark button-small">ПОДРОБНЕЕ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content-wrap js-item-content">
+                                <div class="step-inner-content">
+                                    <div class="step-text-wrap">
+                                        <div class="step-text">Это оригинальный софт «Lacrimas farm». Включает в себя плагин, отправляющий на рендер из вашего софта, и утилиту, которая позволит передать проект менеджеру.</div>
+                                    </div>
+                                    <div class="step-title h3-title">Установка рендер-плагина</div>
+                                    <div class="step-action"><a href="" class="btn-action-link button-down button-dark button-small">ПОДРОБНЕЕ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content-wrap js-item-content">
+                                <div class="step-inner-content">
+                                    <div class="step-text-wrap">
+                                        <div class="step-text">Чтобы пополнить ваш баланс на необходимую для оплаты рендера сумму, можно воспользоваться калькулятором. Он рассчитает примерную стоимость и время.</div>
+                                    </div>
+                                    <div class="step-title h3-title">Расчет времени и стоимости</div>
+                                    <div class="step-action"><a href="" class="btn-action-link button-down button-dark button-small">ПОДРОБНЕЕ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content-wrap js-item-content">
+                                <div class="step-inner-content">
+                                    <div class="step-text-wrap">
+                                        <div class="step-text">Запустить рендер можно с помощью рендер-плагина из вашего софта либо отправить проект менеджеру через синк-утилиту для отправки на рендер.</div>
+                                    </div>
+                                    <div class="step-title h3-title">Отправка сцены на рендер</div>
+                                    <div class="step-action"><a href="" class="btn-action-link button-down button-dark button-small">ПОДРОБНЕЕ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-step">
+                            <div class="step-number">5</div>
+                            <div class="step-content-wrap js-item-content">
+                                <div class="step-inner-content">
+                                    <div class="step-text-wrap">
+                                        <div class="step-text">Управлять рендером, просматривать готовые фреймы, ускорить или остановить вы можете через «Личный кабинет». Готовый сиквенс будет грузиться к вам в компьютер.</div>
+                                    </div>
+                                    <div class="step-title h3-title">Рендер и готовый результат</div>
+                                    <div class="step-action"><a href="" class="btn-action-link button-down button-dark button-small">ПОДРОБНЕЕ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+                <div class="page-actions-box">
+                    <div class="action-wrap">
+                        <a href="" class="btn-action-link">узнать стоимость</a>
+                    </div>
+                    <div class="action-wrap">
+                        <a href="" class="btn-action-link">Начать рендер</a>
+                    </div>
+                </div>
+            </div>
+            <!--/steps-box-->
+
         </div>
         <!-- /page -->
+
+        <!--main-gallery-box-->
+        <div class="main-gallery-box cnt-section">
+            <div class="inner-wrap">
+                <div class="title-box">
+                    <h2 class="h1-title">Примеры рендера на ферме</h2>
+                </div>
+            </div>
+            <div class="slider-wrap">
+                <div class="slider">
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal01.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal01.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal02.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal02.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal01.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal01.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal02.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal02.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal01.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal01.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal02.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal02.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal01.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal01.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal02.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal02.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal01.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal01.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal02.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal02.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal01.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal01.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal02.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal02.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal01.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal01.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal02.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal02.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal01.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal01.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <a href="./img/gal02.jpg" class="item-gallery" data-fancybox="gal">
+                            <img src="./img/gal02.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--/sl-wrap-->
+                </div>
+            </div>
+        </div>
+        <!--/main-gallery-box-->
+
+        <!--page-->
+        <div class="page">
+
+            <!--clients-box-->
+            <div class="clients-box">
+                <div class="title-box">
+                    <h2 class="h1-title">Наши клиенты</h2>
+                </div>
+                <div class="slider-wrap">
+                    <div class="slider">
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo01.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo02.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo03.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo04.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo01.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo02.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo03.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo04.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo01.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo02.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo03.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <div class="item-logo">
+                                <a href="" class="logo-image">
+                                    <img src="./img/logo04.jpg" alt="">
+                                </a>
+                                <div class="logo-text-wrap">
+                                    <div class="logo-text">Отличная рендер-ферма, управление и менеджмент вполне понятные. Есть подробные инструкции. Менеджеры фермы готовы прийти на помощь в любое время суток и помочь с отправкой на рендер</div>
+                                    <div class="logo-name">Вячеслав Криворучко</div>
+                                    <a href="" class="btn-action-ico ico-close"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/sl-wrap-->
+                    </div>
+                </div>
+            </div>
+            <!--/clients-box-->
+
+            <!--about-info-box-->
+            <div class="about-info-box">
+                <div class="info-title-wrap">
+                    <div class="info-title">Lacrimas Farm безопасен и&nbsp;конфиденциален для клиентов</div>
+                </div>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile">
+                            <div class="tile-ico">
+                                <img src="./img/icons/tile01.png" alt="">
+                            </div>
+                            <div class="tile-title">Сертификация <br>ISO27001</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile">
+                            <div class="tile-ico">
+                                <img src="./img/icons/tile02.png" alt="">
+                            </div>
+                            <div class="tile-title">Сеть доверенных партнеров <br> аккредитация TPN</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile">
+                            <div class="tile-ico">
+                                <img src="./img/icons/tile03.png" alt="">
+                            </div>
+                            <div class="tile-title">Соглашение <br>NDA</div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/about-info-box-->
+
+            <!--news-box-->
+            <div class="news-box">
+                <div class="title-box">
+                    <h2 class="h1-title">Новости рендеринга</h2>
+                </div>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-new">
+                            <span class="new-photo">
+                                <img src="./img/new01.jpg" alt="" class="img-bg-cover">
+                            </span>
+                            <span class="new-info-wrap">
+                                <span class="new-info">Открылась бесплатная Blender рендер-ферма, которая не использует ресурсы вашего компьютера для рендеринга</span>
+                            </span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-new">
+                            <span class="new-photo">
+                                <img src="./img/new02.jpg" alt="" class="img-bg-cover">
+                            </span>
+                            <span class="new-info-wrap">
+                                <span class="new-info">Стали известны спецификации GPU NVIDIA GeForce RTX 3090 Ti</span>
+                            </span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+                <div class="page-actions-box">
+                    <div class="action-wrap">
+                        <a href="" class="btn-action-link button-down button-dark button-small">больше новостей</a>
+                    </div>
+                </div>
+            </div>
+            <!--/news-box-->
+
+        </div>
+        <!--/page-->
 
 
         <!-- footer -->
         <footer class="footer">
-            <div class="inner-wrap">
-                333333
+            <!--footer-main-panel-->
+            <div class="footer-main-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="subscribe-wrap">
+                        <div class="sbs-title">Подпишись на наши новости и&nbsp;акции</div>
+                        <div class="sbs-form-wrap">
+                            <form action="/" class="frm-main">
+                                <input type="email" class="form-input" placeholder="Введите ваш e-mail">
+                                <button class="btn-action-ico ico-send"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="menu-main-wrap">
+                        <ul class="menu">
+                            <li><a href="">главная</a></li>
+                            <li><a href="" class="active">быстрый старт</a></li>
+                            <li><a href="">рендер-плагин</a></li>
+                            <li><a href="">софт</a></li>
+                            <li><a href="">о ферме</a></li>
+                            <li><a href="">блог</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-wrap">
+                        <ul>
+                            <li>
+                                <a href="" class="btn-action-menu menu-att">
+                                    <span class="menu-ico">
+                                        <img src="./img/icons/menu-lk.svg" alt="">
+                                    </span>
+                                    <span class="menu-title">Личный кабинет</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-action-menu">
+                                    <span class="menu-ico">
+                                        <img src="./img/icons/menu-calc.svg" alt="">
+                                    </span>
+                                    <span class="menu-title">Калькулятор</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-action-menu">
+                                    <span class="menu-ico">
+                                        <img src="./img/icons/menu-instruction.svg" alt="">
+                                    </span>
+                                    <span class="menu-title">Инструкция</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-panel-wrap">
+                        <div class="logo-wrap">
+                            <a href="" class="logo">
+                                <img src="./img/main/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="contacts-wrap">
+                            <a href="" class="btn-action-ico button-cnt">
+                                <img src="./img/icons/phone.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-cnt">
+                                <img src="./img/icons/tg.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-cnt">
+                                <img src="./img/icons/email.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!--/footer-main-panel-->
+            <!--footer-bottom-panel-->
+            <div class="footer-bottom-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="info-wrap">Воспользовавшись услугой рендер-фермы, вы соглашаетесь с <a href="" class="link-main">договором-офертой</a>. 2008&nbsp;-&nbsp;2021. Все права защищены.</div>
+                </div>
+            </div>
+            <!--/footer-bottom-panel-->
         </footer>
         <!-- /footer -->
 

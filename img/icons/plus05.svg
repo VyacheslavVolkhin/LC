@@ -1,0 +1,11 @@
+<svg width="70" height="55" viewBox="0 0 70 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_641_619" fill="white">
+<path d="M59 11H70V50H0V11H30"/>
+</mask>
+<path d="M70 11H71V10H70V11ZM70 50V51H71V50H70ZM0 50H-1V51H0V50ZM0 11V10H-1V11H0ZM59 12H70V10H59V12ZM69 11V50H71V11H69ZM70 49H0V51H70V49ZM1 50V11H-1V50H1ZM0 12H30V10H0V12Z" fill="black" mask="url(#path-1-inside-1_641_619)"/>
+<path d="M18 54H52" stroke="black"/>
+<path d="M40.5 18.7L35.7 20.1L33.2 15.8L36.7999 12.3L33.2 8.8L35.7 4.5L40.5 5.9L41.7 1H46.7L47.9 5.9L52.7 4.5L55.2 8.8L51.6 12.3L55.2 15.8L52.7 20.1L47.9 18.7L46.7 23.5H41.7L40.5 18.7Z" stroke="black" stroke-miterlimit="10"/>
+<circle cx="44" cy="12" r="2.5" stroke="black"/>
+<circle cx="28" cy="33" r="2.5" stroke="black"/>
+<path d="M24.3 38.9999L19.5 40.3999L17 36.0999L20.6 32.5999L17 29.0999L19.5 24.7999L24.3 26.1999L25.5 21.2999H30.5L31.7 26.1999L36.5 24.7999L39 29.0999L35.4 32.5999L39 36.0999L36.5 40.3999L31.7 38.9999L30.5 43.7999H25.5L24.3 38.9999Z" stroke="black" stroke-miterlimit="10"/>
+</svg>

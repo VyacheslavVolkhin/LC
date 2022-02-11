@@ -1,11 +1,12 @@
 :root {
 	--clr-base: #000;
-	--clr-att: #f00;
+	--clr-att: #FF6B6B;
+	--clr-light: #C9C9C9;
 
-	--min: 320px;
-	--max: 1200px;
+	--min: 360px;
+	--max: 1180px;
 
-	font-size: 10px;
+	font-size: 8px;
 }
 .sl-wrap~.sl-wrap {
 	display: none;
@@ -19,9 +20,13 @@
 body {
 	color: var(--clr-base, #000);
 	background: #fff;
+    letter-spacing: -0.015em;
+    font-size: 10px;
+    line-height: 1.8;
 }
 p, ul, ol {
 	position: relative;
+    margin-bottom: 18/10em;
 	img {
 		max-width: 100%;
 	}
@@ -35,19 +40,21 @@ li {
 }
 a {
 	text-decoration: none;
-	color: var(--clr-att, #f00);
+	color: var(--clr-base, #000);
 	&:hover {
 		text-decoration: none;
-		color: var(--clr-att, #f00);
+		color: var(--clr-light, #C9C9C9);
 	}
+    &.active {
+        text-decoration: none;
+        color: var(--clr-att, #FF6B6B);
+    }
 }
 a.link-main, .link-main {
 	text-decoration: none;
 	border-bottom: 1px solid;
-	&:hover {
-		border-bottom: none;
-	}
 }
+.page-title,
 h1, .h1-title,
 h2, .h2-title,
 h3, .h3-title,
@@ -56,7 +63,84 @@ h5, .h5-title,
 h6, .h6-title {
 	display: block;
 	position: relative;
+    font-weight: 400;
     &:first-child {
         margin-top: 0;
+    }
+}
+.h1-title, h1 {
+    font-size: 32px;
+    line-height: 40/32;
+    margin: 0 0 1em 0;
+}
+.h3-title, h3 {
+    font-size: 13px;
+    line-height: 16/13;
+    text-transform: uppercase;
+    margin: 0 0 18px 0;
+}
+.page-title {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+}
+.title-att {
+    color: var(--clr-att);
+}
+@media (min-width: 480px) {
+    .page-title {
+        font-size: 70px;
+        line-height: 0.85;
+    }
+}
+@media (min-width: 992px) {
+    body {
+        font-size: 14px;
+        line-height: 24/14;
+    }
+    p, ul, ol {
+        margin-bottom: 24/14em;
+    }
+    .page-title {
+        font-size: 150px;
+        line-height: 0.8;
+    }
+    .h1-title, h1 {
+        font-size: 60px;
+        line-height: 73/60;
+    }
+    .h3-title, h3 {
+        font-size: 14px;
+        line-height: 17/14;
+    }
+}
+@media (min-width: 992px) and (max-width: 1179px) {
+    body {
+        font-size: 12px;
+        line-height: 20/12;
+    }
+    p, ul, ol {
+        margin-bottom: 20/12em;
+    }
+    .page-title {
+        font-size: 120px;
+    }
+    .h1-title, h1 {
+        font-size: 40px;
+        line-height: 50/40;
+    }
+}
+@media (min-width: 992px) {
+    
+}
+@media (min-width: 1180px) {
+    :root {
+        font-size: 10px;
+    }
+    .h3-title, h3 {
+        font-size: 18px;
+        line-height: 22/14;
     }
 }

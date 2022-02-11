@@ -100,7 +100,82 @@ $(document).ready(function(){
 			$(this).addClass('active').next('.js-tab-content').slideDown(200);
 		}
 	})
-	
+    
+    
+    //items toggle
+    $('.js-items .item-wrap.active').each(function() {
+        if ($(window).innerWidth()<992) {
+            $(this).find('.js-item-content').slideDown(200);
+        }
+    })
+    $('.js-items .item-wrap').on('click', function() {
+        if ($(this).hasClass('active')) {
+            /*$(this).removeClass('active');
+            if ($(window).innerWidth()<992) {
+                $(this).find('.js-item-content').slideUp(200);
+            }*/
+        } else {
+            if ($(window).innerWidth()<992) {
+                $(this).parent('.js-items').find('.active').find('.js-item-content').slideUp(200);
+                $(this).find('.js-item-content').slideDown(200);
+            }
+            $(this).parent('.js-items').find('.active').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        }
+    })
+    
+
+
+    //main-gallery-box
+    if (!!$('.main-gallery-box').offset()) {
+        $('.main-gallery-box .slider').slick({
+            dots: false,
+            slidesToShow: 1,
+            variableWidth: true,
+            infinite: false,
+            adaptiveHeight: false,
+            prevArrow: false,
+            nextArrow: false,
+        });
+    }
+
+    //clients-box
+    if (!!$('.clients-box').offset()) {
+        $('.clients-box .slider').slick({
+            dots: false,
+            slidesToShow: 3,
+            variableWidth: false,
+            infinite: true,
+            adaptiveHeight: false,
+            prevArrow: false,
+            nextArrow: false,
+            responsive: [
+                {
+                    breakpoint: 1180,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+            ]
+        });
+    }
+    //logo
+    $('.item-logo .logo-image').on('click', function() {
+        $(this).parent().toggleClass('active');
+        return false;
+    })
+    $('.item-logo .ico-close').on('click', function() {
+        $(this).parents('.item-logo').toggleClass('active');
+        return false;
+    })
+    
 });
 
 
