@@ -54,6 +54,14 @@
 		display: block;
 	}
 }
+.swiper.slider-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .swiper-wrapper {
+        display: flex;
+    }
+}
 .items-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +92,7 @@
     line-height: 1;
     display: block;
 }
-.sl-wrap~.sl-wrap {
+.sl-wrap:not(.swiper-slide)~.sl-wrap {
     display: none;
 }
 .no-mbottom {

@@ -8,11 +8,55 @@
     padding: 0 7px;
     font-size: 10px;
 }
+.form-input-att {
+    height: 30px;
+    border: none;
+    background: var(--clr-att);
+    padding: 0 9px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
 textarea.form-input {
 	height: 100px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	resize: none;
+}
+select {
+	display: block;
+	width: 100%;
+	padding-right: 30px;
+	background-image: url(../img/icons/select.svg);
+	background-position: right 10px center;
+	background-color: #fff;
+    background-size: 6px auto;
+	background-repeat: no-repeat;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	appearance: none!important;
+	line-height: 1em;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	outline: none;
+    &.form-select-clear {
+        display: inline-block;
+        height: 30px;
+        padding: 0 14px 0 20px;
+        border: none;
+        background-color: transparent;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        border-radius: 0;
+        box-shadow: none;
+        background-position: right center;
+        width: auto;
+        cursor: pointer;
+    }
+}
+select::-ms-expand {
+	display: none;
 }
 .btn,
 button,
@@ -76,6 +120,38 @@ input[type="submit"] {
             opacity: 0.15;
         }
     }
+    &.ico-arrow {
+        width: 80px;
+        height: 80px;
+        &:before {
+            background-image: url(../img/icons/arrow03.svg);
+            background-size: 23px auto;
+        }
+        &:after {
+            background-image: url(../img/icons/arrow01.svg);
+            background-size: 23px auto;
+            opacity: 0;
+            .t-rotate(90deg);
+        }
+        &.ico-arrow-large {
+            &:before, &:after {
+                background-size: 37px auto;
+            }
+        }
+        &:hover {
+            &:before {
+                opacity: 0.15;
+            }
+        }
+        &.active {
+            &:before {
+                opacity: 0;
+            }
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
     &.ico-menu {
         &:before {
             background-image: url(../img/icons/menu.svg);
@@ -106,6 +182,13 @@ input[type="submit"] {
             opacity: 0.2;
         }
     }
+    &.ico-play {
+        width: 64px;
+        height: 64px;
+        &:before {
+            background-image: url(../img/icons/play.svg);
+        }
+    }
     &.ico-close {
         &:after, &:before {
             width: 18px;
@@ -132,6 +215,11 @@ input[type="submit"] {
     text-transform: uppercase;
     position: relative;
     transition: color ease 0.2s;
+    &.btn {
+        background: none;
+        height: auto;
+        border: none;
+    }
     &:hover {
         color: var(--clr-base);
         &:before {
@@ -142,6 +230,11 @@ input[type="submit"] {
     &.button-down {
         &:before {
             .t-rotate(90deg);
+        }
+    }
+    &.button-left {
+        &:before {
+            .t-rotate(-90deg);
         }
     }
     &.button-light {
@@ -331,6 +424,45 @@ input[type="submit"] {
         }
 	}
 }
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    line-height: 1;
+    text-align: center;
+    font-size: 0;
+    margin: 0;
+    li {
+        margin: 0 8px;
+        padding: 0;
+        display: block;
+        &:before {
+            display: none;
+        }
+        button {
+            background: none;
+            border: none;
+            min-width: 0;
+            padding: 0;
+            box-shadow: none;
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 0;
+            background: #EEEEEE;
+            &:hover, &.active {
+                background: var(--clr-att);
+            }
+        }
+    }
+    .slick-active {
+        button {
+            background: var(--clr-att);
+        }
+    }
+}
 @media (min-width: 480px) {
     .btn-action-ico {
         &.ico-menu {
@@ -344,6 +476,23 @@ input[type="submit"] {
     }
 }
 @media (min-width: 992px) {
+    .form-input-att {
+        height: 39px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+    .btn-action-ico {
+        &.ico-arrow {
+            &:after, &:before {
+                background-size: 25px auto;
+            }
+            &.ico-arrow-large {
+                &:after, &:before {
+                    background-size: 51px auto;
+                }
+            }
+        }
+    }
     .btn-action-menu {
         &.menu-main {
             height: 78px;
@@ -404,7 +553,18 @@ input[type="submit"] {
     }
 }
 @media (min-width: 1180px) {
-
+    .btn-action-ico {
+        &.ico-arrow {
+            &:after, &:before {
+                background-size: 30px auto;
+            }
+            &.ico-arrow-large {
+                &:after, &:before {
+                    background-size: 61px auto;
+                }
+            }
+        }
+    }
     .btn-action-link {
         font-size: 18px;
         line-height: 22px;
